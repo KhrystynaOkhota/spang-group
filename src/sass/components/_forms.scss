@@ -1,0 +1,173 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+input {
+  /* -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+ */
+  -webkit-border-radius: 0;
+}
+
+input, button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.form {
+
+  &-control {
+    position: relative;
+    margin-bottom: 18px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 10px;
+    }
+
+    & i {
+      font-size: 18px;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+    }
+
+    &__label, &__input, &__textarea {
+      font-family: 'Gilroy', sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0.05em;
+    }
+
+    &__label {
+      display: block;
+      color: #000;
+    }
+
+    &__input, &__textarea {
+      background: transparent;
+      border: none;
+      border-radius: 10px;
+      border: 1px solid #DDDDDD;
+      color: #ADADAD;
+      resize: none;
+      padding: 9px 20px 11px 20px;
+      width: 100%;
+    }
+
+
+    &__btn {
+      width: 100%;
+
+      @media (max-width: $breakpoint-md) {
+
+      }
+    }
+
+  }
+}
+
+::-webkit-input-placeholder {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Gilroy', sans-serif;
+
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+::-moz-placeholder {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Gilroy', sans-serif;
+
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1;
+
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Gilroy', sans-serif;
+
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+div.wpcf7 .ajax-loader {
+  display: none !important;
+}
+
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: #21242C !important;
+  caret-color: $whiteColor;
+  -webkit-text-fill-color: #fff !important;
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  caret-color: $whiteColor;
+  -webkit-text-fill-color: $whiteColor;
+  -webkit-box-shadow: 0 0 0px 1000px #21242C inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

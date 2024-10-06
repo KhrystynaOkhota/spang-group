@@ -1,0 +1,182 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.accordion {
+  padding-top: 8px;
+
+  &-item {
+    padding: 0;
+
+
+    //overflow: hidden;
+
+    border-radius: 10px;
+    position: relative;
+    background-clip: padding-box;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box;
+    border-radius: 10px;
+    border: 1px solid transparent;
+
+    &:not(&:last-child) {
+      margin-bottom: 15px;
+    }
+
+
+    &__header {
+      cursor: pointer;
+      width: 100%;
+      padding: 25px 50px 25px 25px;
+      outline: none;
+      font-weight: 700;
+      @include fontSize(16, 20);
+      line-height: 15px;
+      color: #000;
+      position: relative;
+
+      & img {
+        width: 17px;
+        object-fit: contain;
+        margin-left: 4px;
+        @include transition(.4);
+        position: absolute;
+        top: calc(50% - 4px);
+        right: 25px;
+      }
+
+    }
+
+    &__body {
+      display: none;
+
+      &-inner {
+        color: #000;
+        position: relative;
+        @include fontSize(14, 16);
+        line-height: 1.5;
+
+      }
+    }
+  }
+
+  table {
+    & caption {
+      font-weight: 500;
+      font-size: 20px;
+      text-align: left;
+    }
+  }
+}
+
+
+.active {
+  & .accordion-item__header {
+    & img {
+      transform: rotate(180deg);
+      transform-origin: center;
+    }
+  }
+}
+
+
+.accordeon-entry {
+  border-top: 1px #e6e6e6 solid;
+  border-bottom: 1px #e6e6e6 solid;
+  margin-top: -1px;
+
+  padding: 0;
+  border-radius: 10px;
+  position: relative;
+  background-clip: padding-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box;
+  border-radius: 10px;
+  border: 1px solid transparent;
+
+  &:not(&:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.accordeon-title {
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    width: 16px;
+    height: 16px;
+    border-bottom: 1px #181818 solid;
+    border-left: 1px #181818 solid;
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    margin-top: -12px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transition: .25s;
+    -webkit-transition: 0.25s;
+  }
+
+  &.align {
+    vertical-align: middle;
+    cursor: pointer;
+    width: 100%;
+    padding: 25px 50px 25px 25px;
+    outline: none;
+    font-weight: 700;
+    font-size: 20px;
+    font-size: -webkit-calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+    font-size: -moz-calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+    font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+    line-height: 15px;
+    color: #000;
+    position: relative;
+  }
+}
+
+
+.accordeon-title.active:after {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-top: -12px
+}
+
+.accordeon-title .align {
+
+
+  vertical-align: middle;
+
+
+  cursor: pointer;
+  width: 100%;
+  padding: 25px 50px 25px 25px;
+  outline: none;
+  font-weight: 700;
+  font-size: 20px;
+  font-size: -webkit-calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+  font-size: -moz-calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1920 - 300)));
+  line-height: 15px;
+  color: #000;
+  position: relative;
+}
+
+.accordeon-toggle {
+  display: none;
+
+  &__content {
+    padding: 18px 25px 25px 25px;
+    position: relative;
+    border-top: 1px solid rgba(217, 217, 217, 1);
+
+  }
+}
+
+@media (max-width: 767px) {
+  .accordeon-title .align {
+    padding-left: 15px
+  }
+
+  .accordeon-toggle {
+    padding: 0 15px 20px
+  }
+}

@@ -1,0 +1,109 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.decor {
+  position: absolute;
+
+  &-1 {
+    top: -65px;
+    right: 0;
+  }
+
+  &-2 {
+  }
+}
+
+.s-hero {
+  background: #030061;
+  color: #fff;
+  height: 100vh;
+  @media (max-width: $breakpoint-md) {
+    padding: 85px 0;
+    height: auto;
+  }
+  & .heading {
+    margin-bottom: 25px;
+    font-size: 50px;
+
+    & span {
+      text-transform: uppercase;
+      color: $accent-color;
+
+      &:nth-child(1) {
+        font-size: 100px;
+      }
+
+      &:nth-child(2) {
+        font-size: 70px;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  & .description {
+    margin-bottom: 66px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  & .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+
+    &__wrap {
+      height: 100%;
+      width: 50%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+
+
+    }
+  }
+}
+
+
+.s-about {
+  background: rgba(244, 246, 254, 1);
+  padding: 111px 0 88px 0;
+
+  & .heading {
+  }
+
+  & .description {
+    margin: 52px 0;
+  }
+
+  & .btn-more {
+  }
+
+  & .benefit {
+    &__heading {
+      margin-bottom: 19px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__img {
+      &-wrap {
+        width: 116px;
+        height: 100px;
+        box-shadow: 0px 0px 20px 0px rgba(51, 116, 238, 0.2);
+        background: rgba(255, 255, 255, 1);
+
+        margin: 0 auto 25px auto;
+      }
+    }
+
+    &__item {
+
+    }
+  }
+}
+
+

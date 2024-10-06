@@ -1,0 +1,241 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.article {
+  &__item {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 30px 0px transparent;
+    display: block;
+    @include transition(.4);
+    @media (max-width: $breakpoint-md) {
+      //   margin-bottom: 32px;
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 30px 0px rgba(51, 116, 238, 0.2);
+
+      & .article__title {
+        color: $accent-color;
+      }
+    }
+  }
+
+  &__info {
+
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &-wrap {
+      padding-bottom: 62%;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__date {
+    background: $whiteColor;
+    padding: 11px 18px 10px 18px;
+    color: rgba(173, 173, 173, 1);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    @include fontSize(14, 16);
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    @include transition(.4);
+  }
+
+  &__description {
+    margin-bottom: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 37px;
+  }
+}
+
+.s-latest-news {
+  padding: 120px 0;
+  background: rgba(244, 246, 254, 1);
+  @media (max-width: $breakpoint-md) {
+    padding: 40px 0;
+  }
+
+  & .article {
+    &__wrap {
+      margin-top: 60px;
+    }
+  }
+}
+
+.s-news {
+  padding-bottom: 119px;
+  background: rgba(244, 246, 254, 1);
+
+  & .article {
+    &__item {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+
+  & .filter {
+    &__link {
+      @include fontSize(16, 22);
+      padding: 0;
+      position: relative;
+      background-clip: padding-box;
+      @include transition(.5);
+      margin-bottom: 30px;
+
+      &:after {
+        width: 0;
+        height: 5px;
+        background: $accent-color;
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 20%;
+        right: 20%;
+        margin: 0 auto;
+        @include transition(.5);
+      }
+
+      & + .filter__link {
+        margin-left: 7%;
+      }
+
+      &:hover {
+        color: $accent-color;
+      }
+
+      &.current {
+        color: $accent-color;
+        &:after {
+          width: 60%;
+        }
+      }
+    }
+
+    &__wrap {
+      margin-top: 30px;
+      padding: 0 27px;
+    }
+  }
+
+  .pagination {
+    margin-top: 99.8px;
+    @media (max-width: $breakpoint-md) {
+      margin-top: 40px;
+    }
+  }
+
+  & .decor {
+    position: absolute;
+    width: 201.1px;
+    height: 215.4px;
+    right: 55.9px;
+    bottom: 99.6px;
+    object-fit: contain;
+    @media (max-width: $breakpoint-xl) {
+      width: 150px;
+      height: 150px;
+      right: 30px;
+      bottom: 30px;
+    }
+    @media (max-width: $breakpoint-md) {
+      width: 100px;
+      height: 100px;
+      right: 15px;
+      bottom: 15px;
+    }
+  }
+}
+
+.s-article {
+  margin-bottom: 44px;
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: 40px;
+  }
+
+  &__action {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    @media (max-width: $breakpoint-md) {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      padding-left: 12px;
+    }
+  }
+
+  &__title {
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 32px;
+      &.heading.decor:after {
+        height: 35px;
+        top: 1px;
+        transform: none;
+      }
+    }
+  }
+
+  &__date {
+    margin-right: 8px;
+    padding: 19px 20px;
+    border: 1px solid #242424;
+    border-radius: 100px;
+    color: #1B1B1B;
+  }
+
+  &__share {
+    border-radius: 100px;
+    padding: 20px;
+    background-color: #A59389;
+    color: #fff;
+
+    & i {
+      padding-right: 20px;
+      font-size: 18px;
+      color: #fff;
+
+      &:after {
+        content: '';
+        width: 1px;
+        height: 9px;
+        background-color: rgba(255, 255, 255, .2);
+        border-radius: 9px;
+      }
+    }
+  }
+
+  &__desc {
+
+    @media (min-width: $breakpoint-md) {
+
+    }
+  }
+}

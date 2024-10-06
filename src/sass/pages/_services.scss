@@ -1,0 +1,229 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.s-services {
+
+  background: linear-gradient(81.5deg, #FFFFFF 21.75%, #E9EAEE 54.83%, #FFFFFF 82.21%);
+  padding: 71px 0 90px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 35px 0;
+  }
+
+  &.no-bg {
+    background: #fff;
+  }
+
+  & .heading {
+    &__wrap {
+      margin-bottom: 14px;
+    }
+  }
+
+  & .services {
+    &__img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+
+    }
+
+    &__item {
+      padding-bottom: 100%;
+      margin-bottom: 30px;
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(50, 50, 47, 0) 0%, rgba(50, 50, 47, 0.7) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+      }
+    }
+
+    &__title {
+      position: absolute;
+      bottom: 27px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      width: 90%;
+      z-index: 3;
+      font-size: 24px;
+    }
+  }
+
+  & .decor-large {
+    position: absolute;
+    bottom: -122px;
+    right: -128px;
+    height: 525px;
+    width: 365px;
+    @media (max-width: $breakpoint-md) {
+      display: none;
+    }
+  }
+}
+
+.s-service-slider {
+  @media (max-width: $breakpoint-md) {
+    padding: 0 15px;
+  }
+
+  & .services {
+    &__item {
+      background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+      border-radius: 10px;
+      height: 143px;
+      padding: 20px 50px 20px 20px;
+      text-align: left;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      @media (max-width: $breakpoint-md) {
+        padding: 20px;
+      }
+
+      &:after {
+        content: '';
+        height: 125px;
+        width: 88px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -42px;
+        background: url("../img/deocor-services.svg");
+      }
+    }
+
+    &__title {
+      color: #fff;
+      @include fontSize(16, 24);
+      font-weight: 600;
+      line-height: 28.8px;
+      z-index: 2;
+      position: relative;
+
+      & i {
+        font-size: 16px;
+        @include fontSize(10, 16);
+        padding-left: 5px;
+      }
+    }
+  }
+}
+
+.s-faq {
+  padding: 50px 0 70px 0;
+
+  & .accordion-item__body-inner {
+    padding: 18px 25px 25px 25px;
+    border-top: 1px solid #D9D9D9;
+  }
+
+  & .editor-style {
+    & p {
+      @include fontSize(16, 20);
+    }
+  }
+}
+
+.s-service-inner {
+  padding: 73px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 28px 0 35px 0;
+  }
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: calc(100% - 73px);
+    background: linear-gradient(263.89deg, #E9EAEE 59.25%, #FFFFFF 100%);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    @media (max-width: $breakpoint-md) {
+      height: 100%;
+    }
+  }
+
+  & .content {
+    padding: 63px 0 160px 0;
+    @media (max-width: $breakpoint-md) {
+      padding: 0;
+    }
+  }
+
+  & .img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &__wrap {
+      height: calc(100% + 73px);
+      border-radius: 10px;
+      overflow: hidden;
+      @media (max-width: $breakpoint-md) {
+        margin: 18px 0 9px 0;
+        height: auto;
+      }
+    }
+  }
+
+  & .btn {
+    @media (max-width: $breakpoint-md) {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    & + .btn {
+      margin-left: 20px;
+      @media (max-width: $breakpoint-md) {
+        margin: 12px 0 0 0;
+      }
+    }
+
+    &__wrap {
+      margin-top: 16px;
+
+    }
+
+    &-transparent {
+
+      background: linear-gradient(#ecedf0, #ecedf0) padding-box, linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%) border-box;
+      border-radius: 10px;
+      border: 1px solid transparent;
+
+
+      &::after {
+        content: '';
+        display: none;
+      }
+    }
+  }
+
+  & .service {
+    &__title {
+      margin-bottom: 16px;
+      @media (max-width: $breakpoint-md) {
+        text-align: center;
+      }
+    }
+  }
+
+  & .kama_breadcrumbs {
+    @media (max-width: $breakpoint-md) {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.btn {
+  position: relative;
+  box-shadow: none;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 22px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+
+  @include transition(.3);
+
+  &:focus {
+    outline: none;
+  }
+
+  &-primary {
+    font-family: 'Montserrat', sans-serif;
+    background: $accent-color;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.76;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    box-shadow: 0px 0px 20px 0px rgba(0, 56, 181, 0.3);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 223px;
+    @include transition(.4);
+
+    &:hover {
+
+      background: rgba(17, 97, 234, 1)
+    }
+  }
+
+  &-more {
+    background: transparent;
+    border: none;
+    color: $accent-color;
+    line-height: 1.47;
+    @include transition(.4);
+
+    & i {
+      margin-left: 14px;
+      font-size: 9px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      color: rgba(17, 97, 234, 1);
+    }
+  }
+
+  &-transparent {
+
+    background: #fff;
+    border: 1px solid transparent;
+    position: relative;
+    background-clip: padding-box;
+
+    & span {
+      background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -1px;
+      bottom: -1px;
+      left: -1px;
+      right: -1px;
+      background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
+
+
+      z-index: -1;
+      border-radius: 10px;
+    }
+
+    &:hover {
+      background-color: rgba(255, 255, 255, .4);
+    }
+  }
+
+  &-white {
+    padding: 20px;
+    background-color: #fff;
+    font-size: 20px;
+    color: #928C89;
+  }
+
+  &-close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    cursor: pointer;
+  }
+
+  &-play {
+    width: 110px;
+    height: 110px;
+    z-index: 2;
+    border: 15px solid rgba(255, 255, 255, .5);
+    background-color: transparent;
+    border-radius: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    @media (max-width: $breakpoint-md) {
+      width: 66px;
+      height: 66px;
+      border: 0.64px solid #fff;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 1);
+      z-index: -1;
+
+    }
+
+    & img {
+      width: 35%;
+
+      object-fit: contain;
+    }
+  }
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
