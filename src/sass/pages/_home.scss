@@ -1,6 +1,18 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.mask-1 {
+  -webkit-mask-image: url(../img/mask-1.svg);
+  mask-image: url(../img/mask-1.svg);
+  mask-repeat: no-repeat;
+
+  mask-size: 100%;
+  -webkit-mask-size: 100%;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
 
 .decor {
   position: absolute;
@@ -22,6 +34,7 @@
     padding: 85px 0;
     height: auto;
   }
+
   & .heading {
     margin-bottom: 25px;
     font-size: 50px;
@@ -60,7 +73,10 @@
       top: 0;
       right: 0;
       z-index: 1;
-
+      @media (max-width: $breakpoint-md) {
+        position: relative;
+        width: 100%;
+      }
 
     }
   }
@@ -105,5 +121,139 @@
     }
   }
 }
+
+.s-directions {
+  padding: 100px 0;
+  background: #FFFFFF;
+
+  & .decor {
+    position: absolute;
+    bottom: -66px;
+    left: -16px;
+
+  }
+
+  &__top {
+    margin-bottom: 30px;
+  }
+
+  & .company {
+    background: $whiteColor;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px transparent;
+    border: 1px solid #F4F6FE;
+    display: grid;
+    grid-template-columns: 175px 1fr;
+    gap: 26px;
+    @include transition(.5);
+    padding: 20px 30px;
+    min-height: 185px;
+
+    &:not(&:last-child) {
+      margin-bottom: 20px;
+
+    }
+
+    &__name, &__description {
+      margin-bottom: 17px;
+    }
+
+    &__name {
+      font-size: 20px;
+    }
+
+    &__logo {
+      &-wrap {
+
+      }
+    }
+
+    &__web {
+      color: #0293ED;
+
+      &:after {
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #0293ED;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        @include transition(.5);
+      }
+
+      &:hover {
+        &:after {
+          width: 0;
+        }
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 0px 20px 0px #3374EE33;
+    }
+  }
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/* TABS */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+.tab {
+  display: none;
+  padding-left: 30px;
+
+  &:nth-child(1) {
+    display: block;
+  }
+
+  &-nav {
+    padding: 60px 30px 60px 0;
+
+  }
+
+  &-item {
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    font-size: 30px;
+    color: #000;
+    white-space: nowrap;
+    cursor: pointer;
+    @include transition(.5);
+
+    &:after {
+      content: '';
+      width: 0;
+      height: 4px;
+      background: #0293ED;
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      @include transition(.5);
+    }
+
+    &:hover, &.active {
+      color: #0293ED;
+
+      &:after {
+        width: 100%;
+      }
+    }
+
+    &:not(&:last-child) {
+      margin-bottom: 45px;
+    }
+  }
+
+
+}
+
+
+
+
 
 
