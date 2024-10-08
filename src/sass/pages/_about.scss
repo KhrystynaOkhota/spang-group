@@ -1,6 +1,59 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+.s-mission {
+  padding: 97px 0 70px 0;
+  background: #fff;
+  @media (max-width: $breakpoint-md) {
+    padding: 60px 0 80px 0;
+  }
+
+
+  & .decor {
+    position: absolute;
+    bottom: -66px;
+    left: -16px;
+    z-index: 1;
+  }
+
+  & .heading {
+    margin-bottom: 55px;
+  }
+
+
+  & .mission {
+    &__heading {
+      color: #000;
+      background: #fff;
+      @include fontSize(18, 22);
+      width: calc(100% - 55px);
+      padding: 13px 30px;
+      min-height: 76px;
+      @media (max-width: $breakpoint-md) {
+        width: calc(100% - 78px);
+      }
+    }
+
+    &__description {
+      line-height: 1.4;
+      @include fontSize(14, 17);
+      color: #fff;
+      padding: 23px 30px;
+    }
+
+    &__item {
+      background-color: #030061;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.s-join {
+  padding: 100px 0;
+}
+
+
+/*
 .doctor {
   &__item {
     margin-bottom: 30px;
@@ -707,3 +760,4 @@
 }
 
 
+*/

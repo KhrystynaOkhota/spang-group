@@ -126,6 +126,22 @@
   padding: 100px 0;
   background: #FFFFFF;
 
+  &.bg {
+    background: #F4F6FE;
+
+    &:after {
+      content: '';
+      width: 100%;
+      max-width: 1275px;
+      height: 1px;
+      background: #D1D5E5;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
   & .decor {
     position: absolute;
     bottom: -66px;
