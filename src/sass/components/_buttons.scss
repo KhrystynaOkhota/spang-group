@@ -109,40 +109,14 @@
   }
 
   &-play {
-    width: 110px;
-    height: 110px;
+    width: 70px;
+    height: 70px;
     z-index: 2;
-    border: 15px solid rgba(255, 255, 255, .5);
-    background-color: transparent;
-    border-radius: 100%;
+    object-fit: contain;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow: hidden;
-    @media (max-width: $breakpoint-md) {
-      width: 66px;
-      height: 66px;
-      border: 0.64px solid #fff;
-    }
-
-    &:after {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 1);
-      z-index: -1;
-
-    }
-
-    & img {
-      width: 35%;
-
-      object-fit: contain;
-    }
   }
 }
 

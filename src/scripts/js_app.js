@@ -273,3 +273,19 @@ $(function () {
         }
     });
 });
+
+
+
+// =============================
+// UPLOAD FILE
+// =============================
+
+$('body').on('change', '.upload-file', function () {
+    var format = $(this).val();
+    var fileName = format.substring(format.lastIndexOf("\\") + 1);
+    if (format == '') {
+        $('.upload-file__name').text($('.upload-file__name').data('placeholder-text'));
+    } else {
+        $('.upload-file__name').text(fileName);
+    }
+});

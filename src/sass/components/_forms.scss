@@ -34,28 +34,24 @@ input, button {
 }
 
 .form {
+  &-heading {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
 
   &-control {
     position: relative;
-    margin-bottom: 18px;
+    margin-bottom: 30px;
     @media (max-width: $breakpoint-md) {
       margin-bottom: 10px;
     }
 
-    & i {
-      font-size: 18px;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      right: 20px;
-      transform: translateY(-50%);
-    }
 
-    &__label, &__input, &__textarea {
+    &__input, &__textarea {
       font-family: 'Gilroy', sans-serif;
       font-size: 16px;
       font-weight: 400;
-      line-height: 30px;
+      line-height: 1.875;
       letter-spacing: 0.05em;
     }
 
@@ -67,7 +63,7 @@ input, button {
     &__input, &__textarea {
       background: transparent;
       border: none;
-      border-radius: 10px;
+      border-radius: 5px;
       border: 1px solid #DDDDDD;
       color: #ADADAD;
       resize: none;
@@ -88,23 +84,22 @@ input, button {
 }
 
 ::-webkit-input-placeholder {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1;
-
-  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #ADADAD;
   font-family: 'Gilroy', sans-serif;
-
+  letter-spacing: 0.05em;
   opacity: 1;
   transition: opacity 0.5s;
 }
 
 ::-moz-placeholder {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1;
-
-  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.05em;
+  color: #ADADAD;
   font-family: 'Gilroy', sans-serif;
 
   opacity: 1;
@@ -112,11 +107,11 @@ input, button {
 }
 
 :-ms-input-placeholder {
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 1;
-
-  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.05em;
+  color: #ADADAD;
   font-family: 'Gilroy', sans-serif;
 
   opacity: 1;
