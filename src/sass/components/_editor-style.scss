@@ -1,6 +1,14 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
+:root {
+  --h1: clamp(2.19rem, calc(0.66rem + 3.18vw), 4rem);
+  --h2: clamp(1.75rem, calc(0.49rem + 2.63vw), 3.25rem);
+  --h3: clamp(1.25rem, calc(0.41rem + 1.75vw), 2.25rem);
+  --h4: clamp(1.13rem, calc(0.6rem + 1.1vw), 1.75rem);
+  --h5: clamp(1.13rem, calc(1.02rem + 0.22vw), 1.25rem);
+}
+
 .editor {
   margin-bottom: 20px;
 
@@ -8,6 +16,38 @@
     font-family: 'Gilroy', sans-serif;
     font-weight: normal;
 
+    & > &:is(h1,h2,h3,h4,h5) + * {
+      margin-top: 1em
+    }
+    .h1,h1 {
+      font-size: var(--h1);
+      line-height: 1.15em;
+      letter-spacing: -.01em
+    }
+
+    .h2,h2 {
+      font-size: var(--h2);
+      line-height: 1.15em;
+      letter-spacing: -.01em
+    }
+
+    .h3,h3 {
+      font-size: var(--h3);
+      line-height: 1.25em;
+      letter-spacing: -.01em
+    }
+
+    .h4,h4 {
+      font-size: var(--h4);
+      line-height: 1.25em;
+      letter-spacing: -.01em
+    }
+
+    .h5,h5 {
+      font-size: var(--h5);
+      line-height: 1.4em;
+      letter-spacing: .01em
+    }
     & p {
       font-weight: 300;
       @include fontSize(14, 17);
@@ -29,11 +69,9 @@
       margin-bottom: 18px;
       line-height: 1.25;
 
-      background: linear-gradient(88.24deg, #CFCFCF 0%, #938C89 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
 
+    }
+/*
     & h2 {
       @include fontSize(20, 24);
     }
@@ -52,7 +90,7 @@
 
     & h6 {
       @include fontSize(12, 14);
-    }
+    }*/
 
     & a:not(.btn-primary) {
       color: $accent-color;
@@ -124,27 +162,29 @@
 
     & ul, & ol {
       margin-bottom: 18px;
-      padding-left: 40px;
+      padding-left: 53px;
       list-style-type: none;
 
       & li {
         font-weight: 300;
-        @include fontSize(18, 22);
-        line-height: 1;
+        @include fontSize(14, 17);
+        line-height: 1.5;
         color: #000;
         position: relative;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+
         &::marker {
           display: none;
         }
+
         &::before {
           content: "";
-          width: 30px;
-          height: 13px;
-          background: url(../img/check.svg);
+          width: 5px;
+          height: 5px;
+          background: $accent-color;
           position: absolute;
-          top: 7px;
-          left: -40px;
+          top: 10px;
+          left: -23px;
         }
       }
     }

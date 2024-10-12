@@ -122,6 +122,10 @@
     cursor: pointer;
     @include transition(.5);
 
+    & i {
+      font-size: 12px;
+    }
+
     &:after {
       content: '';
       width: 0;
@@ -145,8 +149,6 @@
       margin-bottom: 45px;
     }
   }
-
-
 }
 
 

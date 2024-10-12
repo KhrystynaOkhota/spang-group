@@ -95,7 +95,7 @@
       }
 
       &-1 {
-        top:66.2px;
+        top: 66.2px;
         right: 32.9px;
       }
     }
@@ -158,32 +158,19 @@
     }
   }
 
-  .pagination {
+  & .pagination {
     margin-top: 99.8px;
     @media (max-width: $breakpoint-md) {
       margin-top: 40px;
     }
   }
 
-  & .decor {
-    position: absolute;
+  & .decor-1 {
     width: 201.1px;
     height: 215.4px;
     right: 55.9px;
     bottom: 99.6px;
     object-fit: contain;
-    @media (max-width: $breakpoint-xl) {
-      width: 150px;
-      height: 150px;
-      right: 30px;
-      bottom: 30px;
-    }
-    @media (max-width: $breakpoint-md) {
-      width: 100px;
-      height: 100px;
-      right: 15px;
-      bottom: 15px;
-    }
   }
 }
 
@@ -191,6 +178,27 @@
   margin-bottom: 44px;
   @media (max-width: $breakpoint-md) {
     margin-bottom: 40px;
+  }
+
+  & .heading {
+    margin-bottom: 33px;
+    font-size: 50px;
+
+    &__sub {
+      color: $accent-color;
+      font-size: 25px;
+      line-height: 1.4;
+      letter-spacing: 0.05em;
+
+      margin-bottom: 14px;
+    }
+  }
+
+  & .date {
+    font-size: 16px;
+    color: rgba(173, 173, 173, 1);
+    margin-bottom: 26px;
+
   }
 
   &__action {
