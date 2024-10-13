@@ -5,8 +5,16 @@
 .s-banner {
   padding: 4px 0 100px 0;
 
+  & .decor {
+    bottom: 20px;
+    right: 25px;
+    width: 50%;
+    z-index: 5;
+  }
+
   & .heading {
     font-size: 50px;
+    margin-bottom: 30px;
 
     &__sub {
       color: $accent-color;
@@ -91,7 +99,6 @@
   }
 }
 
-
 .s-mission {
   padding: 97px 0 70px 0;
   background: #fff;
@@ -142,6 +149,14 @@
 .s-join {
   padding: 100px 0;
 
+  & .decor {
+    &-1 {
+      top: 50%;
+      transform: translateY(-50%);
+      left: 54px;
+    }
+  }
+
   &__inner {
     padding: 50px 40px;
     margin-top: 44px;
@@ -156,7 +171,7 @@
 
 .upload-file {
   &__wrap {
-    padding: 20.5px 0;
+    padding: 14px 0 14px 20px;
     cursor: pointer;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -165,8 +180,8 @@
 
     & i {
       font-size: 24px;
-      color: rgba(232, 16, 16, 1);
-      padding-right: 16px;
+      color: $accent-color;
+      padding-right: 15px;
     }
 
     & input[type=file] {
@@ -187,7 +202,7 @@
     font-family: Montserrat;
     font-size: 17px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 1;
     letter-spacing: 0.05em;
     text-align: center;
     color: $accent-color;

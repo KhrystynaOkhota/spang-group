@@ -101,7 +101,9 @@
 .tab {
   display: none;
   padding-left: 30px;
-
+  @media (max-width: $breakpoint-md) {
+    padding: 0;
+  }
   &:nth-child(1) {
     display: block;
   }
@@ -123,7 +125,7 @@
     @include transition(.5);
 
     & i {
-      font-size: 12px;
+      font-size: 18px;
     }
 
     &:after {

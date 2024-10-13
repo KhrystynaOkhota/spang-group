@@ -9,7 +9,6 @@
 }
 
 
-
 .s-image {
   & .img {
     position: absolute;
@@ -155,4 +154,41 @@
     margin: 0;
   }
 }
+
+
+.hexagon {
+  width: 58px;
+  height: 100px;
+  background: #fff;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 50px 29px 50px 0;
+    border-color: transparent #fff transparent transparent;
+    transform: rotate(0deg);
+    top: 0;
+    left: -29px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 50px 0 50px 29px;
+    border-color: transparent transparent transparent #fff;
+    transform: rotate(0deg);
+
+    top: 0;
+    right: -29px;
+  }
+}
+
+
 

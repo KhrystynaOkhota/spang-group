@@ -1,72 +1,69 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-.s-thanks {
-  height: 80vh;
+.s-other {
+  height: calc(100vh - 119px);
+  @media (max-width: $breakpoint-md) {
+    padding: 182px 0;
+    margin: 0;
+    height: auto;
+  }
 
-  &__description, & .s-thanks__heading-sub {
+}
+
+.s-thanks {
+
+
+  &__description {
     color: #1D1D1B;
   }
 
   &__heading {
-    margin-bottom: 12px;
-
-    &-sub {
-      @include fontSize(26, 32);
-      margin-bottom: 12px;
-    }
+    font-size: 30px;
+    margin-bottom: 20px;
   }
 
   &__description {
-    font-size: 24px;
-    margin-top: 12px;
+    &, & p {
+      font-size: 22px;
+      font-weight: 300;
+    }
 
     & p + p {
-      margin-top: 12px;
+      margin-top: 20px;
     }
   }
 
   & .btn {
-    margin-top: 12px;
+    margin-top: 20px;
   }
 
   &__img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     &-wrap {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
+      position: relative;
+      width: 230px;
+      height: 164px;
+      margin: 0 auto 70px auto;
 
-      &:after {
-        content: '';
-        background: radial-gradient(52.65% 86.07% at 52.65% 50%, #E9EAED 0%, rgba(233, 234, 237, 0.7) 100%);
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-      }
     }
   }
 }
 
 .s-error {
-  height: calc(100vh - 119px);
-  @media (max-width: $breakpoint-md) {
-    padding: 182px 0;
-    height: auto;
+  & .decor {
+    position: absolute;
+    bottom: -68px;
+    z-index: 43534523453;
+    left: -7px;
   }
-
-& .decor{
-  position: absolute;
-  bottom: -68px;
-  z-index: 43534523453;
-  left: -7px;
-}
 
   & .btn-primary {
     width: 100%;
