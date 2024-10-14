@@ -58,6 +58,8 @@ input, button {
     &__label {
       display: block;
       color: #000;
+      font-size: 16px;
+      margin-bottom: 10px;
     }
 
     &__input, &__textarea {
@@ -165,4 +167,81 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: $whiteColor;
   -webkit-box-shadow: 0 0 0px 1000px #21242C inset;
   transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.checkbox-entry {
+  position: relative;
+  min-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 15px;
+
+  & + .checkbox-entry {
+    margin-top: 18px;
+  }
+
+  & div {
+    display: block;
+    width: calc(100% - 33px);
+
+    & span {
+      color: $accent-color;
+    }
+  }
+
+  & input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    margin: 0;
+
+    &:checked {
+      & ~ div {
+        text-shadow: 0 0 0 currentColor;
+      }
+
+      & + i {
+        background: $accent-color;
+        border-color: $accent-color;
+
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  & i {
+    width: 21px;
+    height: 21px;
+    border: 1px solid rgba(221, 221, 221, 1);
+    background: transparent;
+
+    display: block;
+    border-radius: 5px;
+    margin-right: 12px;
+    position: relative;
+    @include transition(.4);
+
+    &::before {
+      left: 50%;
+      top: 48%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      font-size: 15px;
+      color: #ffffff;
+      @include transition(.4);
+    }
+  }
 }

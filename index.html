@@ -574,7 +574,7 @@
                     </li>
                 </ul>
 
-                <div class="btn-primary text-center">Зв’язатись</div>
+                <div class="btn-primary text-center open-popup" data-rel="cta">Зв’язатись</div>
             </div>
             <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 footer-item column grid">
                 <ul class="menu">
@@ -640,148 +640,76 @@
 
 <div class="popup-wrapper">
     <div class="bg-layer"></div>
+
     <div class="popup-content cta" data-rel="cta">
         <div class="layer-close"></div>
         <div class="popup-container ">
             <div class="btn-close d-flex align-middle align-center"><img src="assets/img/close.svg" alt="close icon">
             </div>
 
-            <div class="popup-form text-center">
-                <h4 class="popup-form__heading heading-font text-bold">Зворотній зв'язок</h4>
+            <div class="popup-form">
+                <h4 class="popup-form__heading heading-font text-center text-bold">Форма зворотнього зв'язку</h4>
                 <form>
                     <div class="row m-row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
                             <div class="form-control">
-                                <input class="form-control__input" type="text" name="" value=""
+                                <label for="username" class="form-control__label">Ваше ім’я*</label>
+                                <input id="username" class="form-control__input" type="text" name="" value=""
                                        placeholder="Ім’я "
-                                       title="">
-                                <i class="icon-user"></i>
+                                       title="" required>
+
                             </div>
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
                             <div class="form-control">
-                                <input class="form-control__input" type="tel" name="" value=""
-                                       placeholder="+38 (000) 000 00 00"
-                                       title="">
-                                <i class="icon-phone"></i>
+                                <label for="userphone" class="form-control__label">Ваш телефон* </label>
+                                <input id="userphone" class="form-control__input" type="tel" name="" value=""
+                                       placeholder=" +38 (_ _ _) _ _ _ - _ _ - _ _"
+                                       title="" required>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
+                            <div class="form-control">
+                                <label for="useremail" class="form-control__label"> Ваш e-mail</label>
+                                <input id="useremail" class="form-control__input" type="tel" name="" value=""
+                                       placeholder=" Е-mail" title="">
+
                             </div>
                         </div>
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
-                            <input type="submit" value="Надіслати" class="btn btn-more">
+                            <div class="form-control">
+                                <label for="useremessage" class="form-control__label">Коментар</label>
+                                <textarea id="useremessage" class="form-control__textarea"
+                                          placeholder="Текст вашого коментаря"></textarea>
+
+                            </div>
+
+                        </div>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
+
+                            <div class="form-control__checkbox">
+                                <label class="checkbox-entry">
+                                    <input type="checkbox">
+                                    <i class="icon-check"></i>
+
+
+                                    <div>Надсилаючи запит, ви надаєте згоду на <span>обробку персональних даних</span></div>
+                                </label>
+                            </div>
+                            <input type="submit" value="Вiдправити" class="btn btn-primary text-center">
                         </div>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
 </div>
 
 <script src="./assets/js/jquery-3.7.0.min.js"></script>
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/js_app.min.js"></script>
-
-<script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=" type="text/javascript"></script>
-
-<script async defer>
-
-    function initializeMap() {
-        var element = document.getElementById('map');
-        var options = {
-            zoom: 15,
-            center: {lat: 50.462977825823856, lng: 30.49312623977225},
-            styles: [{"elementType": "geometry", "stylers": [{"color": "#f5f5f5"}]}, {
-                "elementType": "labels.icon",
-                "stylers": [{"visibility": "off"}]
-            }, {
-                "elementType": "labels.text.fill",
-                "stylers": [{"color": "#616161"}]
-            }, {
-                "elementType": "labels.text.stroke",
-                "stylers": [{"color": "#f5f5f5"}]
-            }, {
-                "featureType": "administrative.land_parcel",
-                "elementType": "labels.text.fill",
-                "stylers": [{"color": "#bdbdbd"}]
-            }, {
-                "featureType": "poi",
-                "elementType": "geometry",
-                "stylers": [{"color": "#eeeeee"}]
-            }, {
-                "featureType": "poi",
-                "elementType": "labels.text.fill",
-                "stylers": [{"color": "#757575"}]
-            }, {
-                "featureType": "poi.park",
-                "elementType": "geometry",
-                "stylers": [{"color": "#e5e5e5"}]
-            }, {
-                "featureType": "poi.park",
-                "elementType": "labels.text.fill",
-                "stylers": [{"color": "#9e9e9e"}]
-            }, {
-                "featureType": "road",
-                "elementType": "geometry",
-                "stylers": [{"color": "#ffffff"}]
-            }, {
-                "featureType": "road.arterial",
-                "elementType": "labels.text.fill",
-                "stylers": [{"color": "#757575"}]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "geometry",
-                "stylers": [{"color": "#dadada"}]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "labels.text.fill",
-                "stylers": [{"color": "#616161"}]
-            }, {
-                "featureType": "road.local",
-                "elementType": "labels.text.fill",
-                "stylers": [{"color": "#9e9e9e"}]
-            }, {
-                "featureType": "transit.line",
-                "elementType": "geometry",
-                "stylers": [{"color": "#e5e5e5"}]
-            }, {
-                "featureType": "transit.station",
-                "elementType": "geometry",
-                "stylers": [{"color": "#eeeeee"}]
-            }, {
-                "featureType": "water",
-                "elementType": "geometry",
-                "stylers": [{"color": "#c9c9c9"}]
-            }, {"featureType": "water", "elementType": "labels.text.fill", "stylers": [{"color": "#9e9e9e"}]}]
-        };
-        var myMap = new google.maps.Map(element, options);
-        var markers = [{
-            coordinates: {lat: 50.462977825823856, lng: 30.49312623977225},
-            image: "assets/img/placeholder.svg",
-            info: "<div class='map-info'>м.Київ, вул. Глибочицька, 23</div>"
-        },];
-
-        function addMarker(properties) {
-            var marker = new google.maps.Marker({position: properties.coordinates, map: myMap, icon: properties.image});
-            if (properties.image) {
-                marker.setIcon(properties.image);
-            }
-            if (properties.info) {
-                marker.addListener('click', function () {
-                    InfoWindow.open(myMap, marker);
-                });
-                var InfoWindow = new google.maps.InfoWindow({content: properties.info});
-            }
-        }
-
-        for (var i = 0; i < markers.length; i++) {
-            addMarker(markers[i]);
-        }
-    }
-
-
-    $(window).on('load', function () {
-        initializeMap();
-    });
-</script>
 
 
 <script>
