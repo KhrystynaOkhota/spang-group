@@ -2,11 +2,16 @@
 @import "../abstracts/variables";
 
 :root {
-  --h1: clamp(2.19rem, calc(0.66rem + 3.18vw), 4rem);
+ /* --h1: clamp(2.19rem, calc(0.66rem + 3.18vw), 4rem);
   --h2: clamp(1.75rem, calc(0.49rem + 2.63vw), 3.25rem);
   --h3: clamp(1.25rem, calc(0.41rem + 1.75vw), 2.25rem);
   --h4: clamp(1.13rem, calc(0.6rem + 1.1vw), 1.75rem);
-  --h5: clamp(1.13rem, calc(1.02rem + 0.22vw), 1.25rem);
+  --h5: clamp(1.13rem, calc(1.02rem + 0.22vw), 1.25rem);*/
+  --h1: 50px;
+  --h2: 40px;
+  --h3: 30px;
+  --h4: 20px;
+  --h5: 18px;
 }
 
 .editor {

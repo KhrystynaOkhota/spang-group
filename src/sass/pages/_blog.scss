@@ -174,12 +174,20 @@
     }
   }
 
-  & .decor-1 {
-    width: 201.1px;
-    height: 215.4px;
-    right: 55.9px;
-    bottom: 99.6px;
-    object-fit: contain;
+  & .decor {
+    &-1 {
+      width: 201.1px;
+      height: 215.4px;
+      right: 55.9px;
+      bottom: 99.6px;
+      object-fit: contain;
+    }
+
+    &-2 {
+      left: 0;
+      top: -80px;
+      z-index: 4;
+    }
   }
 }
 
