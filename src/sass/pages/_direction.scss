@@ -379,7 +379,13 @@
     }
   }
 }
-
+.s-social-resp{
+  & .heading{
+    font-size: 50px;
+    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+  }
+}
 .s-info {
   padding: 90px 0;
 
