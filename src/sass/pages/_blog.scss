@@ -348,51 +348,45 @@
   border: none;
   min-height: 14px;
   background-color: transparent;
-  border-radius: 2px;
+  border-radius: 0;
   margin: 0;
-}
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 0;
 
-.SumoSelect > .CaptionCont > label {
-  cursor: pointer;
-  width: 39px;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.SumoSelect > .CaptionCont > label> i{
-  &:before {
-    font-family: 'icomoon' !important;
-    content: "\e904";
+  & > span {
+    color: $accent-color;
+    font-weight: 700;
+    font-size: 17px;
+    padding-right: 10px;
   }
 
-}
-.SumoSelect > .CaptionCont > span {
-  color: $accent-color;
-  font-weight: 700;
-  font-size: 17px;
-}
-.SumoSelect.open > .search > label,
-.SumoSelect.open > .search > span {
-  opacity: 0;
+  & > label {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & > i {
+      font-size: 7px;
+      color: $accent-color;
+      font-weight: 400;
+      font-style: normal;
+      // background: red url(../img/ar-bottom.svg) no-repeat center;
+      margin: 0;
+
+      &:before {
+        content: "\e904";
+        font-family: 'icomoon' !important;
+      }
+    }
+  }
 }
 
-.SumoSelect > .CaptionCont > label > i {
-
-  opacity: 1;
-  width: 24px;
-  height: 24px;
-}
-
-.SumoSelect.open > .CaptionCont > label > i {
- 
-  -webkit-transform: rotateX(180deg);
-  transform: rotateX(180deg);
-}
-
-.SumoSelect.open > .optWrapper {
-  opacity: 1;
-  visibility: visible;
-  top: 100%;
-}
 
 .SumoSelect.open > .CaptionCont, .SumoSelect:focus > .CaptionCont, .SumoSelect:hover > .CaptionCont {
   box-shadow: 0 0 2px transparent;
