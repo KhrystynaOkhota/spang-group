@@ -22,6 +22,11 @@
     &__wrap {
       width: 132px;
       height: 55px;
+      @media (max-width: $breakpoint-md) {
+        width: 102px;
+        height: 45px;
+      }
+
     }
   }
 

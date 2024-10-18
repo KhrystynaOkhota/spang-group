@@ -25,7 +25,8 @@
 
   &__description {
     &, & p {
-      font-size: 22px;
+
+      @include fontSize(18, 22);
       font-weight: 300;
     }
 
@@ -63,6 +64,12 @@
     bottom: -68px;
     z-index: 43534523453;
     left: -7px;
+    @media (max-width: $breakpoint-md) {
+      width: 129px;
+      height: 118px;
+      left: -16px;
+      bottom: -25px;
+    }
   }
 
   & .btn-primary {
@@ -71,20 +78,25 @@
     display: inline-block;
   }
 
+  &__descriptionб &__number {
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 55px;
+    }
+  }
+
   &__description {
     margin-bottom: 33px;
-    line-height: 35px;
-    @include fontSize(16, 22);
+    line-height: 1.6;
+    @include fontSize(18, 22);
+
   }
 
   &__number {
     max-width: 559px;
-    // height: 204px;
     object-fit: contain;
     margin: 0 auto 38px auto;
     @media (max-width: $breakpoint-md) {
       max-width: 260px;
-      margin-bottom: 20px;
     }
   }
 }

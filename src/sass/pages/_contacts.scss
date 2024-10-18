@@ -6,46 +6,78 @@
 
   & .decor {
     &-1 {
-      right: -36px;
-      top: -59px;
-      z-index: 4;
+      right: 59px;
+      top: 106px;
+      object-fit: contain;
+      @media (max-width: $breakpoint-md) {
+        top: 25px;
+        right: 0;
+        width: 90px;
+        height: 96px;
+        z-index: 3;
+      }
+
     }
   }
 
   & .heading {
-
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 14px;
+    }
   }
 
   & .description {
     margin-top: 29px;
+    margin-bottom: 31px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 27px;
+      margin-top: 20px;
+    }
   }
 
   & .contact {
-    margin-bottom: 10px;
-    @media (max-width: $breakpoint-md) {
-      margin-bottom: 20px;
+    &:not(&:last-child) {
+      margin-bottom: 40px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 30px;
+      }
     }
+
 
     &__wrap {
-      padding: 31px 0 44px 0;
+      padding: 30px 40px 30px 20px;
+      background: rgba(3, 0, 97, .9);
+      position: absolute;
+      top: 35%;
+      left: 47px;
+      width: 360px;
+      z-index: 3;
+      @media (max-width: $breakpoint-md) {
+        padding: 30px 20px;
+        position: relative;
+        top: - 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+      }
     }
 
-    &__title {
-      font-size: 20px;
-      margin-bottom: 5px;
-    }
 
     &__info {
+      color: #ffffff;
+      width: calc(100% - 85px);
     }
 
     & .img {
-      width: 51px;
-      height: 51px;
+      width: 50%;
+      height: 50%;
       object-fit: contain;
       object-position: center;
 
       &__wrap {
-        margin-bottom: 18px;
+        margin-right: 21px;
+        width: 63px;
+        height: 54px;
       }
     }
 
@@ -57,6 +89,9 @@
     z-index: 2;
     position: absolute !important;
     border-radius: 10px;
+    @media (max-width: $breakpoint-md) {
+      border-radius: 0;
+    }
 
     &--wrap {
       //height: 395px;
@@ -66,6 +101,10 @@
       overflow: hidden;
       z-index: 1;
       padding-bottom: 46%;
+      @media (max-width: $breakpoint-md) {
+        border-radius: 0;
+        border: none;
+      }
     }
   }
 
@@ -78,14 +117,25 @@
 
 .s-cta {
   padding: 110px 0 94px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 50px 0;
+    text-align: center;
+  }
 
   & .heading {
     color: #000;
-    @include fontSize(20, 40);
+    @include fontSize(35, 40);
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 22px;
+    }
   }
 
   & .description {
     padding: 0 5%;
+    @media (max-width: $breakpoint-md) {
+      max-width: 336px;
+      margin: 0 auto 25px auto;
+    }
   }
 
   & .decor {
@@ -93,6 +143,11 @@
     &-1 {
       left: 0;
       top: 80px;
+      @media (max-width: $breakpoint-md) {
+        top: auto;
+        left: -20px;
+        bottom: 0;
+      }
     }
   }
 }
