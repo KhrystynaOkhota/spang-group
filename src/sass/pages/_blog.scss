@@ -108,6 +108,7 @@
     @media (min-width: $breakpoint-md) {
       padding-bottom: 110px;
     }
+
     & .decor {
       &-1 {
         bottom: 25%;
@@ -193,20 +194,54 @@
       margin-bottom: 30px;
       @media (max-width: $breakpoint-md) {
         margin-bottom: 0;
+        &:after {
+          width: 0;
+          height: 1px;
+          background: #DFDFDF;
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          right: 0;
+
+          @include transition(.5);
+        }
       }
 
-      &:after {
-        width: 0;
-        height: 5px;
-        background: $accent-color;
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 20%;
-        right: 20%;
-        margin: 0 auto;
-        @include transition(.5);
+      & span {
+        position: relative;
+
+        &:after {
+          width: 0;
+          height: 5px;
+          background: $accent-color;
+          content: '';
+          position: absolute;
+          bottom: -7px;
+          left: 25%;
+          right: 25%;
+          margin: 0 auto;
+          @include transition(.5);
+          @media (max-width: $breakpoint-md) {
+            left: 0;
+            right: auto;
+          }
+        }
+
+        &:before {
+          width: 0;
+          height: 1px;
+          background: #DFDFDF;
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          @include transition(.5);
+        }
       }
+
 
       & + .filter__link {
 
@@ -219,12 +254,29 @@
         color: $accent-color;
       }
 
-      &.current {
+      &.current, &:hover {
         color: $accent-color;
 
         &:after {
-          width: 60%;
+          width: 100%;
         }
+
+        & span {
+          &:after {
+            width: 50%;
+            @media (max-width: $breakpoint-md) {
+              width: 100%;
+            }
+          }
+
+          &:before {
+            width: 100%;
+            @media (max-width: $breakpoint-md) {
+              width: 0;
+            }
+          }
+        }
+
       }
     }
 
@@ -451,46 +503,53 @@
   }
 }
 
-.SumoSelect > .CaptionCont {
-  position: relative;
-  border: none;
-  min-height: 14px;
-  background-color: transparent;
-  border-radius: 0;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  padding: 0;
-
-  & > span {
-    color: $accent-color;
-    font-weight: 700;
-    font-size: 17px;
-    padding-right: 10px;
+.SumoSelect {
+  width: max-content;
+  @media (max-width: 360px) {
+    margin-top: 20px;
   }
 
-  & > label {
-    cursor: pointer;
-    width: 12px;
-    height: 12px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+  & > .CaptionCont {
+    position: relative;
+    border: none;
+    min-height: 14px;
+    background-color: transparent;
+    border-radius: 0;
+    margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
+    padding: 0;
 
-    & > i {
-      font-size: 7px;
+    & > span {
       color: $accent-color;
-      font-weight: 400;
-      font-style: normal;
-      // background: red url(../img/ar-bottom.svg) no-repeat center;
-      margin: 0;
+      font-weight: 700;
+      @include fontSize(15, 17);
+      padding-right: 10px;
+    }
 
-      &:before {
-        content: "\e904";
-        font-family: 'icomoon' !important;
+    & > label {
+      cursor: pointer;
+      width: 12px;
+      height: 12px;
+      -webkit-transition: 0.3s;
+      transition: 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      & > i {
+        font-size: 7px;
+        color: $accent-color;
+        font-weight: 400;
+        font-style: normal;
+        // background: red url(../img/ar-bottom.svg) no-repeat center;
+        margin: 0;
+
+        &:before {
+          content: "\e904";
+          font-family: 'icomoon' !important;
+        }
       }
     }
   }

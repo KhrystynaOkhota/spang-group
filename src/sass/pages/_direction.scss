@@ -150,6 +150,7 @@
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
       background: transparent;
       border-radius: 0;
+
       &:not(&:last-child) {
         margin-bottom: 0;
       }
@@ -336,7 +337,6 @@
   padding-bottom: 100px;
 
   & .heading {
-    font-size: 50px;
     margin-bottom: 30px;
     @media (max-width: $breakpoint-md) {
       margin-bottom: 15px;
@@ -354,13 +354,14 @@
   & .company {
     box-shadow: 0px 0px 20px 0px #3374EE33;
     border: 1px solid #D6D9E8;
-    padding: 25px 30px;
+    padding: 25px 15px 25px 23px;;
     border-radius: 10px;
     min-height: 360px;
     margin-bottom: 30px;
     @include transition(.5);
     @media (max-width: $breakpoint-md) {
-      padding: 26px 18px;
+      padding: 26px 20px 40px 20px;
+      margin-bottom: 20px;
     }
 
     & .column {
@@ -368,8 +369,7 @@
         padding-right: 25px;
         position: relative;
         @media (max-width: $breakpoint-md) {
-          padding-right: 0;
-          padding-bottom: 20px;
+          padding: 0 0 20px 0;
         }
 
         &:after {
@@ -382,8 +382,9 @@
           background: rgba(0, 0, 0, 0.1);
           @media (max-width: $breakpoint-md) {
             height: 1px;
-            width: 100%;
+            width: calc(100% + 40px);
             bottom: 0;
+            left: -20px;
             top: auto;
           }
         }
@@ -396,6 +397,13 @@
           padding-left: 0;
           padding-top: 20px;
           padding-bottom: 23px;
+        }
+      }
+
+      &:nth-child(3) {
+        padding-left: 43px;
+        @media (max-width: $breakpoint-md) {
+          padding: 0;
         }
       }
     }
@@ -411,7 +419,7 @@
     }
 
     &__name {
-      font-size: 30px;
+      font-size: 25px;
       margin-bottom: 40px;
       @media (max-width: $breakpoint-md) {
         margin-bottom: 10px;
@@ -428,6 +436,7 @@
 
       &-wrap {
         padding-bottom: 92%;
+        height: 100%;
       }
     }
 
@@ -487,7 +496,7 @@
       top: -60px;
       left: -31px;
       z-index: 4;
-      @media (max-width: $breakpoint-md) {
+      @media (max-width: $breakpoint-xl) {
         display: none;
       }
     }
@@ -495,6 +504,22 @@
     &-2 {
       top: 22%;
       right: 70px;
+      @media (max-width: $breakpoint-md) {
+        top: auto;
+        right: auto;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 116px;
+        height: 76px;
+      }
+    }
+  }
+
+  & .direction {
+    margin-top: 70px;
+    @media (max-width: $breakpoint-md) {
+      margin-top: 20px;
     }
   }
 }
