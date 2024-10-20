@@ -89,15 +89,11 @@
     </div>
 
     <section class="s-banner d-flex align-middle align-center --relative">
-        <div class="img__wrap mask-1">
-            <img src="assets/img/banner.jpg" class="img" alt="hero img">
-        </div>
-        <img src="assets/img/decor-mask-1.svg" class="decor" alt="hero img">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="heading__sub text-bold">Сучасність, технологічність, розвиток</div>
-                    <h1 class="heading text-bold">Про нас</h1>
+                    <div class="heading__sub  text-bold d-none d-md-block">Сучасність, технологічність, розвиток</div>
+                    <h1 class="heading text-bold text-l">Про нас</h1>
                     <div class="description  editor-style"><p>Сучасна фінансово-промислова група компаній, яка
                         спеціалізується
                         на банківських і страхових послугах, послугах з логістики та лізингу, сільськогосподарському
@@ -121,6 +117,12 @@
 
                 </div>
             </div>
+        </div>
+        <div class="s-banner__img --relative">
+            <div class="img__wrap mask-1">
+                <img src="assets/img/banner.jpg" class="img" alt="hero img">
+            </div>
+            <img src="assets/img/decor-mask-1.svg" class="decor" alt="hero img">
         </div>
     </section>
 
@@ -206,23 +208,25 @@
     </section>
 
     <section class="s-directions  --relative">
-        <img src="assets/img/decor-direction.svg" alt="" class="decor decor-1">
-        <img src="assets/img/decor-1.svg" alt="decor" class="decor decor-2" >
+        <img src="assets/img/decor-direction.svg" alt="" class="decor decor-1 d-none d-md-block">
+        <img src="assets/img/decor-1.svg" alt="decor" class="decor decor-2 d-none d-md-block">
         <div class="container">
             <div class="row s-directions__top">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-middle align-justify">
-                    <h3 class="heading text-bold text-xl text-center">Бізнес напрямки</h3>
-                    <a href="direction.html" class="btn-primary text-center">Усi напрямки</a>
+                    <h3 class="heading text-bold text-xl">Бізнес напрямки</h3>
+                    <a href="direction.html" class="btn-primary text-center d-none d-md-inline-block">Усi напрямки</a>
                 </div>
             </div>
 
-            <div class="row m-row tabs type1">
+            <div class="row m-row tabs type1 d-none d-md-flex">
                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 column">
                     <div class="tab-nav">
                         <div class="tab-toggle">
                             <div class="tab-item active text-bold d-flex align-middle align-justify">Нерухомість <i
                                     class="icon-ar-right"></i></div>
-                            <div class="tab-item text-bold d-flex align-justify">АГРО <i class="icon-ar-right"></i> </div>
+                            <div class="tab-item text-bold d-flex align-middle align-justify">АГРО <i
+                                    class="icon-ar-right"></i>
+                            </div>
                             <div class="tab-item text-bold d-flex align-middle align-justify">Відновлювана енергетика <i
                                     class="icon-ar-right"></i></div>
                             <div class="tab-item text-bold d-flex align-middle align-justify">Венчурне інвестування <i
@@ -490,7 +494,721 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="row d-block d-md-none">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="accordeon">
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Нерухомість </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">АГРО </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Відновлювана енергетика </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Венчурне інвестування </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Будівництво/Девелопмент</span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Благодійна діяльність </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="blog.html" class="btn-primary text-center ">Усi напрямки</a>
+                </div>
             </div>
         </div>
     </section>
@@ -513,9 +1231,9 @@
             </div>
             <div class="row m-row ">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 column">
-                    <div class="s-join__inner">
-
-                        <h3 class="form-heading text-bold text-xl text-center">Форма зворотнього зв'язку</h3>
+                    <div class="s-join__inner form__wrap --relative">
+                        <img src="assets/img/decor-2.svg" alt="" class="decor decor-1 ">
+                        <h3 class="form__title text-bold text-center">Форма зворотнього зв'язку</h3>
 
                         <form>
                             <div class="row m-row">
@@ -560,7 +1278,7 @@
                 </div>
             </div>
         </div>
-        <img src="assets/img/decor-2.svg" alt="" class="decor decor-1">
+
     </section>
 
 </main>
@@ -814,9 +1532,6 @@
         });
         $(this).closest('.tab-nav').removeClass('active').find('.tab-title').text($(this).text());
     });
-
-
-
 
 
 </script>

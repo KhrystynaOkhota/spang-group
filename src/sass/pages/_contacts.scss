@@ -14,9 +14,8 @@
         right: 0;
         width: 90px;
         height: 96px;
-        z-index: 3;
+        z-index: 1;
       }
-
     }
   }
 
@@ -55,10 +54,12 @@
       @media (max-width: $breakpoint-md) {
         padding: 30px 20px;
         position: relative;
-        top: - 90%;
-        left: 50%;
-        transform: translateX(-50%);
+        top: 0;
+        left: 0;
+        transform: translateY(20px);
         border-radius: 10px;
+        width: 100%;
+
       }
     }
 
@@ -94,7 +95,7 @@
     }
 
     &--wrap {
-      //height: 395px;
+      min-height: 395px;
       border-radius: 10px;
       box-shadow: 0px 0px 20px 0px rgba(51, 116, 238, 0.2);
       border: 20px solid $whiteColor;
@@ -104,6 +105,8 @@
       @media (max-width: $breakpoint-md) {
         border-radius: 0;
         border: none;
+        width: calc(100% + 30px);
+        left: -15px;
       }
     }
   }

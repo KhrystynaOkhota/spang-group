@@ -4,6 +4,9 @@
 
 .s-banner {
   padding: 4px 0 100px 0;
+  @media (max-width: $breakpoint-md) {
+    padding-bottom: 50px;
+  }
 
   & .decor {
     bottom: 20px;
@@ -13,8 +16,10 @@
   }
 
   & .heading {
-    font-size: 50px;
     margin-bottom: 30px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 14px;
+    }
 
     &__sub {
       color: $accent-color;
@@ -23,24 +28,56 @@
     }
   }
 
-  & .img {
+  &__description {
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__img {
     height: 100%;
-    width: 100%;
-    object-fit: cover;
 
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    @media (max-width: $breakpoint-md) {
+      position: relative;
+      width: 100%;
+    }
 
-    &__wrap {
+    & .img {
       height: 100%;
-      width: 50%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 1;
+      width: 100%;
+      object-fit: cover;
       @media (max-width: $breakpoint-md) {
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
+        height: 100%;
       }
 
+      &__wrap {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        @media (max-width: $breakpoint-md) {
+          position: relative;
+          padding-bottom: 100%;
+        }
+      }
+    }
+
+    & .decor {
+      bottom: 20px;
+      right: 25px;
+      width: 100%;
+      z-index: 2;
     }
   }
 }
@@ -70,7 +107,7 @@
     padding: 0;
     @media (max-width: 400px) {
       margin-top: 20px;
-      width:100%;
+      width: 100%;
     }
   }
 
@@ -146,7 +183,7 @@
   padding: 97px 0 70px 0;
   background: #fff;
   @media (max-width: $breakpoint-md) {
-    padding: 60px 0 80px 0;
+    padding: 50px 0 30px 0;
   }
 
 
@@ -159,6 +196,9 @@
 
   & .heading {
     margin-bottom: 55px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 30px;
+    }
   }
 
 
@@ -171,7 +211,8 @@
       padding: 13px 30px;
       min-height: 76px;
       @media (max-width: $breakpoint-md) {
-        width: calc(100% - 78px);
+        width: calc(100% - 25px);
+        padding: 13px 20px;
       }
     }
 
@@ -180,34 +221,72 @@
       @include fontSize(14, 17);
       color: #fff;
       padding: 23px 30px;
+      @media (max-width: $breakpoint-md) {
+        width: calc(100% - 25px);
+        padding: 15px 20px;
+      }
     }
 
     &__item {
       background-color: #030061;
       margin-bottom: 30px;
+      @media (max-width: $breakpoint-md) {
+        min-height: 245px;
+        margin-bottom: 20px;
+      }
     }
   }
 }
 
 .s-join {
   padding: 100px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 40px 0 55px 0;
+  }
 
-  & .decor {
-    &-1 {
-      top: 50%;
-      transform: translateY(-50%);
-      left: 54px;
+  & .heading {
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 14px;
     }
   }
 
-  &__inner {
-    padding: 50px 40px;
-    margin-top: 44px;
-    border-radius: 10px;
-    background: $whiteColor;
+  & .btn-primary {
+    width: 90%;
+    margin-left: 5%;
+  }
 
-    & > .heading {
+  & .decor {
+    &-1 {
+      top: 10%;
+      left: -20%;
+      @media (max-width: $breakpoint-md) {
+        width: 109px;
+        height: 71px;
+        top: -30px;
+        left: auto;
+        right: 0;
+      }
+    }
+  }
 
+  & .form {
+    &__wrap {
+      padding: 50px 40px;
+      margin-top: 44px;
+      border-radius: 10px;
+      background: $whiteColor;
+      @media (max-width: $breakpoint-md) {
+        padding: 40px 15px;
+        margin-top: 43px;
+      }
+    }
+
+    &__title {
+      @include fontSize(30, 40);
+      margin-bottom: 40px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 25px;
+      }
     }
   }
 }
@@ -220,6 +299,11 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     background: #F4F6FE;
+    @media (max-width: $breakpoint-md) {
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 20px;
+    }
 
     & i {
       font-size: 24px;

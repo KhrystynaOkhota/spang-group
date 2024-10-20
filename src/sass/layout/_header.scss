@@ -177,7 +177,8 @@
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     @media (max-width: $breakpoint-md) {
-      top: 80px;
+      top: 71px;
+    height:calc(100% - 71px);
     }
 
     &.is-visible {
@@ -217,15 +218,16 @@
         }
 
         & a {
-          font-weight: 400;
-          font-size: 25px;
+          font-weight: 500;
+
+          @include fontSize(22,25);
           line-height: 1.2;
           color: #fff;
           @include transition(.5);
           position: relative;
           display: block;
           @media (max-width: $breakpoint-lg) {
-            padding: 25px 15px;
+            padding: 15px 15px;
           }
         }
 
