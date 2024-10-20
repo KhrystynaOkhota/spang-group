@@ -24,12 +24,16 @@
   flex-direction: row;
   width: 100%;
   z-index: 2;
-  white-space: nowrap;
+  //white-space: nowrap;
 
   position: relative;
   @include transition(.4);
   overflow: auto;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
+  @media (max-width: $breakpoint-md) {
+    padding: 15px 0;
+    margin-bottom: 25px;
+  }
 
   & a {
     color: rgba(159, 159, 159, 1);
@@ -41,18 +45,20 @@
   }
 
   .breadcrumb_last {
-   // color: #000;
+    // color: #000;
   }
 
   & .kb {
     &_title {
-     // color: #000;
+      // color: #000;
       //font-weight: 500;
     }
 
     &_sep {
       margin: 0 7px;
-
+      @media (max-width: $breakpoint-md) {
+        margin: 0 4px;
+      }
       &:has(+ .kb_title) {
         & i {
           //color: #000;

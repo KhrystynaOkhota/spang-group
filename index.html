@@ -73,10 +73,7 @@
 <main class="main">
 
     <section class="s-hero d-flex align-middle align-center --relative">
-        <div class="img__wrap mask-1">
-            <img src="assets/img/hero.jpg" class="img" alt="hero img">
-        </div>
-        <img src="assets/img/decor-mask-1.svg" class="decor" alt="hero img">
+
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -91,15 +88,22 @@
                 </div>
             </div>
         </div>
+        <div class="s-hero__img --relative">
+            <div class="img__wrap mask-1">
+                <img src="assets/img/hero.jpg" class="img" alt="hero img">
+            </div>
+            <img src="assets/img/decor-mask-1.svg" class="decor" alt="hero img">
+        </div>
+
     </section>
 
     <section class="s-about home --relative">
         <img src="assets/img/decor-left.svg" class="decor decor-1" alt="decor">
-        <img src="assets/img/decor-3.svg" class="decor decor-2" alt="decor">
+        <img src="assets/img/decor-3.svg" class="decor decor-2 d-none d-md-block" alt="decor">
         <div class="container">
             <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="d-flex align-justify align-middle">
+                    <div class="d-flex align-justify align-middle s-about__top">
                         <h1 class="heading text-bold text-xl">Про нас</h1>
                         <a href="about.html" class="btn btn-more d-flex align-left align-middle"><span>Детальніше</span>
                             <i class="icon-ar-btn-right"></i> </a>
@@ -123,14 +127,15 @@
             <div class="row m-row">
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
                     <div class="benefit__item">
-                        <div class="benefit__img-wrap hexagon --relative d-flex align-center align-middle">
+                        <div class="benefit__img-wrap hexagon --relative d-flex align-center align-middle overlap">
                             <img src="assets/img/benefit-1.svg" alt="benefit icon" class="benefit__img">
                         </div>
-                        <div class="article__info">
-                            <div class="benefit__heading text-bold text-l text-center">
+                        <div class="article__info overlap">
+                            <div class="benefit__heading text-bold text-center">
                                 Якість
                             </div>
-                            <div class="benefit__description text-s text-light">Побудова успішної міжнародної групи компаній, що сприятиме
+                            <div class="benefit__description text-s text-light">Побудова успішної міжнародної групи
+                                компаній, що сприятиме
                                 розвитку економіки, залученню внутрішніх та зовнішніх інвестицій, створенню нових
                                 робочих місць,
                             </div>
@@ -139,14 +144,15 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
                     <div class="benefit__item">
-                        <div class="benefit__img-wrap hexagon --relative d-flex align-center align-middle">
+                        <div class="benefit__img-wrap hexagon --relative d-flex align-center align-middle overlap">
                             <img src="assets/img/benefit-2.svg" alt="benefit icon" class="benefit__img">
                         </div>
-                        <div class="article__info">
-                            <div class="benefit__heading text-bold text-l text-center">
+                        <div class="article__info overlap">
+                            <div class="benefit__heading text-bold text-center">
                                 Сервіс
                             </div>
-                            <div class="benefit__description text-s text-light">Побудова успішної міжнародної групи компаній, що сприятиме
+                            <div class="benefit__description text-s text-light">Побудова успішної міжнародної групи
+                                компаній, що сприятиме
                                 розвитку економіки, залученню внутрішніх та зовнішніх інвестицій, створенню нових
                                 робочих місць,
                             </div>
@@ -155,14 +161,15 @@
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
                     <div class="benefit__item">
-                        <div class="benefit__img-wrap hexagon --relative d-flex align-center align-middle">
+                        <div class="benefit__img-wrap hexagon --relative d-flex align-center align-middle overlap">
                             <img src="assets/img/benefit-3.svg" alt="benefit icon" class="benefit__img">
                         </div>
-                        <div class="article__info">
-                            <div class="benefit__heading text-bold text-l text-center">
+                        <div class="article__info overlap">
+                            <div class="benefit__heading text-bold text-center">
                                 Інновації
                             </div>
-                            <div class="benefit__description text-s text-light">Побудова успішної міжнародної групи компаній, що сприятиме
+                            <div class="benefit__description text-s text-light">Побудова успішної міжнародної групи
+                                компаній, що сприятиме
                                 розвитку економіки, залученню внутрішніх та зовнішніх інвестицій, створенню нових
                                 робочих місць,
                             </div>
@@ -174,22 +181,23 @@
     </section>
 
     <section class="s-directions bg --relative">
-        <img src="assets/img/decor-direction.svg" alt="" class="decor  decor-1">
+        <img src="assets/img/decor-direction.svg" alt="" class="decor  decor-1 d-none d-md-block">
         <div class="container">
             <div class="row s-directions__top">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-middle align-justify">
-                    <h3 class="heading text-bold text-xl text-center">Бізнес напрямки</h3>
-                    <a href="blog.html" class="btn-primary text-center">Усi напрямки</a>
+                    <h3 class="heading text-bold text-xl ">Бізнес напрямки</h3>
+                    <a href="blog.html" class="btn-primary text-center d-none d-md-inline-block">Усi напрямки</a>
                 </div>
             </div>
 
-            <div class="row m-row tabs type1">
+            <div class="row m-row tabs type1 d-none d-md-flex">
                 <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 column">
                     <div class="tab-nav">
                         <div class="tab-toggle">
                             <div class="tab-item active text-bold d-flex align-middle align-justify">Нерухомість <i
                                     class="icon-ar-right"></i></div>
-                            <div class="tab-item text-bold d-flex align-middle align-justify">АГРО <i class="icon-ar-right"></i>
+                            <div class="tab-item text-bold d-flex align-middle align-justify">АГРО <i
+                                    class="icon-ar-right"></i>
                             </div>
                             <div class="tab-item text-bold d-flex align-middle align-justify">Відновлювана енергетика <i
                                     class="icon-ar-right"></i></div>
@@ -458,7 +466,721 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="row d-block d-md-none">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="accordeon">
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Нерухомість </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">АГРО </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Відновлювана енергетика </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Венчурне інвестування </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Будівництво/Девелопмент</span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordeon-entry swiper-entry">
+                            <div class="accordeon-title d-flex align-justify align-middle">
+                                <span class="align">Благодійна діяльність </span>
+                                <i class="icon-ar-right"></i>
+                            </div>
+                            <div class="accordeon-toggle" style="display: none;">
+                                <div class="swiper-container"
+                                     data-options='{"slidesPerView":1.5, "spaceBetween": 15, "speed": 1200, "loop": true}'>
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/article-1.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт Сайт Сайт Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/no-logo.png" alt="" class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+                                                    <a href="" class="company__web --relative">Сайт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="company">
+                                                <div class="company__logo-wrap">
+                                                    <img src="assets/img/company-logo-1.png" alt=""
+                                                         class="company__logo">
+                                                </div>
+
+                                                <div class="company__info">
+                                                    <div class="company__name text-bold">СЕС «Вільшанка»</div>
+                                                    <div class="company__description text-s text-light">Сонячна
+                                                        електростанція «Вільшанка»,
+                                                        з піковою
+                                                        потужністю 12 Мвт.
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="blog.html" class="btn-primary text-center ">Усi напрямки</a>
+                </div>
             </div>
         </div>
     </section>
@@ -467,87 +1189,261 @@
         <img src="assets/img/decor-1.svg" class="decor decor-1" alt="decor">
         <img src="assets/img/decor-2.svg" class="decor decor-2" alt="decor">
         <div class="container">
-            <div class="row ">
+            <div class="row s-latest-news__top">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex align-middle align-justify">
-                    <h3 class="heading text-bold text-xl text-center">Останні новини</h3>
-                    <a href="blog.html" class="btn-primary text-center">Усi новини</a>
+                    <h3 class="heading text-bold text-xl">Останні новини</h3>
+                    <a href="blog.html" class="btn-primary text-center d-none d-md-inline-block">Усi новини</a>
                 </div>
             </div>
 
-            <div class="row m-row article__wrap">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
-                    <a href="" class="article__item ">
-                        <div class="article__img-wrap --relative">
-                            <img src="assets/img/article-1.png" alt="" class="article__img">
-                            <div class="article__date text-s --relative">
-                                03.08.2024
+            <div class="row swiper-entry">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                    <div class="swiper-container"
+                         data-options='{"slidesPerView":1, "direction": "horizontal" ,"spaceBetween": 30, "speed": 1200, "centeredSlides": false, "loop": true, "breakpoints": {"767": {"slidesPerView": 2,"spaceBetween": 0}, "992": {"slidesPerView": 3}, "1200": {"slidesPerView": 3}}}'>
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="article__item ">
+                                    <div class="article__img-wrap --relative">
+                                        <img src="assets/img/article-1.png" alt="" class="article__img">
+                                        <div class="article__date text-s --relative">
+                                            03.08.2024
+                                        </div>
+                                    </div>
+                                    <div class="article__info">
+                                        <div class="article__title text-s text-bold">
+                                            За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
+                                        </div>
+                                        <div class="article__description text-s text-regular">
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                        </div>
+                                        <div class="btn-more text-bold text-s">Детальніше<i
+                                                class="icon-ar-btn-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="article__item ">
+                                    <div class="article__img-wrap --relative">
+                                        <img src="assets/img/article-1.png" alt="" class="article__img">
+                                        <div class="article__date text-s --relative">
+                                            03.08.2024
+                                        </div>
+                                    </div>
+                                    <div class="article__info">
+                                        <div class="article__title text-s text-bold">
+                                            За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
+                                        </div>
+                                        <div class="article__description text-s text-regular">
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                        </div>
+                                        <div class="btn-more text-bold text-s">Детальніше<i
+                                                class="icon-ar-btn-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="article__item ">
+                                    <div class="article__img-wrap --relative">
+                                        <img src="assets/img/article-1.png" alt="" class="article__img">
+                                        <div class="article__date text-s --relative">
+                                            03.08.2024
+                                        </div>
+                                    </div>
+                                    <div class="article__info">
+                                        <div class="article__title text-s text-bold">
+                                            За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
+                                        </div>
+                                        <div class="article__description text-s text-regular">
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                        </div>
+                                        <div class="btn-more text-bold text-s">Детальніше<i
+                                                class="icon-ar-btn-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="article__item ">
+                                    <div class="article__img-wrap --relative">
+                                        <img src="assets/img/article-1.png" alt="" class="article__img">
+                                        <div class="article__date text-s --relative">
+                                            03.08.2024
+                                        </div>
+                                    </div>
+                                    <div class="article__info">
+                                        <div class="article__title text-s text-bold">
+                                            За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
+                                        </div>
+                                        <div class="article__description text-s text-regular">
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                        </div>
+                                        <div class="btn-more text-bold text-s">Детальніше<i
+                                                class="icon-ar-btn-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="article__item ">
+                                    <div class="article__img-wrap --relative">
+                                        <img src="assets/img/article-1.png" alt="" class="article__img">
+                                        <div class="article__date text-s --relative">
+                                            03.08.2024
+                                        </div>
+                                    </div>
+                                    <div class="article__info">
+                                        <div class="article__title text-s text-bold">
+                                            За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
+                                        </div>
+                                        <div class="article__description text-s text-regular">
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                        </div>
+                                        <div class="btn-more text-bold text-s">Детальніше<i
+                                                class="icon-ar-btn-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="article__item ">
+                                    <div class="article__img-wrap --relative">
+                                        <img src="assets/img/article-1.png" alt="" class="article__img">
+                                        <div class="article__date text-s --relative">
+                                            03.08.2024
+                                        </div>
+                                    </div>
+                                    <div class="article__info">
+                                        <div class="article__title text-s text-bold">
+                                            За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
+                                        </div>
+                                        <div class="article__description text-s text-regular">
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                        </div>
+                                        <div class="btn-more text-bold text-s">Детальніше<i
+                                                class="icon-ar-btn-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="article__item ">
+                                    <div class="article__img-wrap --relative">
+                                        <img src="assets/img/article-1.png" alt="" class="article__img">
+                                        <div class="article__date text-s --relative">
+                                            03.08.2024
+                                        </div>
+                                    </div>
+                                    <div class="article__info">
+                                        <div class="article__title text-s text-bold">
+                                            За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
+                                        </div>
+                                        <div class="article__description text-s text-regular">
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                        </div>
+                                        <div class="btn-more text-bold text-s">Детальніше<i
+                                                class="icon-ar-btn-right"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="blog-inner.html" class="article__item ">
+                                    <div class="article__img-wrap --relative">
+                                        <img src="assets/img/article-1.png" alt="" class="article__img">
+                                        <div class="article__date text-s --relative">
+                                            03.08.2024
+                                        </div>
+                                    </div>
+                                    <div class="article__info">
+                                        <div class="article__title text-s text-bold">
+                                            За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
+                                        </div>
+                                        <div class="article__description text-s text-regular">
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                            Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що
+                                            становить
+                                            18,55% від загального обсягу платежів та на 25% перевищує вказаний показник
+                                            за сім
+                                            місяців 2023 року.
+                                        </div>
+                                        <div class="btn-more text-bold text-s">Детальніше<i
+                                                class="icon-ar-btn-right"></i></div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                        <div class="article__info">
-                            <div class="article__title text-s text-bold">
-                                За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
-                            </div>
-                            <div class="article__description text-s text-regular">
-                                Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що становить
-                                18,55% від загального обсягу платежів та на 25% перевищує вказаний показник за сім
-                                місяців 2023 року.
-                                Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що становить
-                                18,55% від загального обсягу платежів та на 25% перевищує вказаний показник за сім
-                                місяців 2023 року.
-                            </div>
-                            <div class="btn-more text-bold text-s">Детальніше<i class="icon-ar-btn-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
-                    <a href="" class="article__item ">
-                        <div class="article__img-wrap --relative">
-                            <img src="assets/img/article-2.png" alt="" class="article__img">
-                            <div class="article__date text-s --relative">
-                                03.08.2024
-                            </div>
-                        </div>
-                        <div class="article__info">
-                            <div class="article__title text-s text-bold">
-                                За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
-                            </div>
-                            <div class="article__description text-s text-regular">
-                                Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що становить
-                                18,55% від загального обсягу платежів та на 25% перевищує вказаний показник за сім
-                                місяців 2023 року.
-                                Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що становить
-                                18,55% від загального обсягу платежів та на 25% перевищує вказаний показник за сім
-                                місяців 2023 року.
-                            </div>
-                            <div class="btn-more text-bold text-s">Детальніше<i class="icon-ar-btn-right"></i></div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 column">
-                    <a href="" class="article__item ">
-                        <div class="article__img-wrap --relative">
-                            <img src="assets/img/article-3.png" alt="" class="article__img">
-                            <div class="article__date text-s --relative">
-                                03.08.2024
-                            </div>
-                        </div>
-                        <div class="article__info">
-                            <div class="article__title text-s text-bold">
-                                За сім місяців СГ «Spang» зібрала понад 2,55 млрд грнплатежів
-                            </div>
-                            <div class="article__description text-s text-regular">
-                                Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що становить
-                                18,55% від загального обсягу платежів та на 25% перевищує вказаний показник за сім
-                                місяців 2023 року.
-                                Так, за договорами КАСКО страховиком було залучено 473,74 млн грн премій, що становить
-                                18,55% від загального обсягу платежів та на 25% перевищує вказаний показник за сім
-                                місяців 2023 року.
-                            </div>
-                            <div class="btn-more text-bold text-s">Детальніше<i class="icon-ar-btn-right"></i></div>
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
+            <div class="row m-row">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12 column">
+                    <a href="blog.html" class="btn-primary text-center d-inline-block d-md-none">Усi новини</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -556,7 +1452,7 @@
 <footer class="footer overlap">
     <div class="container">
         <div class="row align-justify m-row footer__main">
-            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-xs-12 column  logo__wrap">
                 <a href="index.html" class="logo__link">
                     <img src="assets/img/logo.svg" alt="Spang group" class="logo">
                 </a>
@@ -694,7 +1590,8 @@
                                     <i class="icon-check"></i>
 
 
-                                    <div>Надсилаючи запит, ви надаєте згоду на <span>обробку персональних даних</span></div>
+                                    <div>Надсилаючи запит, ви надаєте згоду на <span>обробку персональних даних</span>
+                                    </div>
                                 </label>
                             </div>
                             <input type="submit" value="Вiдправити" class="btn btn-primary text-center">
@@ -730,6 +1627,7 @@
         });
         $(this).closest('.tab-nav').removeClass('active').find('.tab-title').text($(this).text());
     });
+
 
 </script>
 </body>

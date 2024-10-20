@@ -36,6 +36,9 @@
 
 .s-directions {
   padding: 100px 0;
+  @media (max-width: $breakpoint-md) {
+    padding: 50px 0;
+  }
 
   &.bg {
     background: #FFFFFF;
@@ -84,6 +87,7 @@
     min-height: 185px;
     @media (max-width: $breakpoint-md) {
       grid-template-columns: 1fr;
+      padding: 20px 10px;
     }
 
     &:not(&:last-child) {
@@ -133,14 +137,71 @@
     }
   }
 
+  & .btn-primary {
+    @media (max-width: $breakpoint-md) {
+      margin-top: 30px;
+      display: inline-block;
+    }
+  }
+
+  & .accordeon {
+    &-entry {
+      border: none;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      background: transparent;
+      border-radius: 0;
+      &:not(&:last-child) {
+        margin-bottom: 0;
+      }
+    }
+
+    &-title {
+      border: none;
+      border-bottom: 4px solid transparent;
+      @include transition(.5);
+
+      &:after {
+        display: none;
+      }
+
+      & .align {
+        padding: 35px 0;
+        font-size: 24px;
+        width: calc(100% - 20px);
+        line-height: 1.1;
+      }
+
+      & i {
+        font-size: 20px;
+        color: #0293ED;
+        @include transition(.5);
+      }
+
+      &.active {
+
+        border-color: #0293ED;
+
+        & i {
+          transform: rotate(90deg);
+        }
+      }
+
+    }
+  }
+
+  &-toggle {
+    padding: 35px 0;
+  }
 }
+
 
 .s-direction-catalog {
   padding-bottom: 70px;
   @media (max-width: $breakpoint-md) {
-    padding-bottom:20px;
+    padding-bottom: 20px;
 
   }
+
   & .decor {
     &-1 {
       right: 30.7px;
@@ -277,11 +338,17 @@
   & .heading {
     font-size: 50px;
     margin-bottom: 30px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 15px;
+    }
   }
 
   & .description {
-    margin-top: 70px;
     margin-bottom: 43px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 20px;
+    }
+
   }
 
   & .company {
@@ -292,11 +359,18 @@
     min-height: 360px;
     margin-bottom: 30px;
     @include transition(.5);
+    @media (max-width: $breakpoint-md) {
+      padding: 26px 18px;
+    }
 
     & .column {
       &:nth-child(1) {
         padding-right: 25px;
         position: relative;
+        @media (max-width: $breakpoint-md) {
+          padding-right: 0;
+          padding-bottom: 20px;
+        }
 
         &:after {
           content: '';
@@ -306,12 +380,23 @@
           top: -25px;
           right: 0;
           background: rgba(0, 0, 0, 0.1);
+          @media (max-width: $breakpoint-md) {
+            height: 1px;
+            width: 100%;
+            bottom: 0;
+            top: auto;
+          }
         }
 
       }
 
       &:nth-child(2) {
         padding-left: 43px;
+        @media (max-width: $breakpoint-md) {
+          padding-left: 0;
+          padding-top: 20px;
+          padding-bottom: 23px;
+        }
       }
     }
 
@@ -328,6 +413,9 @@
     &__name {
       font-size: 30px;
       margin-bottom: 40px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 10px;
+      }
     }
 
     &__img {
@@ -399,6 +487,9 @@
       top: -60px;
       left: -31px;
       z-index: 4;
+      @media (max-width: $breakpoint-md) {
+        display: none;
+      }
     }
 
     &-2 {

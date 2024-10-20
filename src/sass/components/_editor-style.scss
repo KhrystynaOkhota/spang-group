@@ -169,7 +169,9 @@
       margin-bottom: 18px;
       padding-left: 53px;
       list-style-type: none;
-
+      @media (max-width: $breakpoint-md) {
+      padding-left: 23px;
+    }
       & li {
         font-weight: 300;
         @include fontSize(14, 17);

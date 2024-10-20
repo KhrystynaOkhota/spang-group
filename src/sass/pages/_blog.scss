@@ -9,7 +9,7 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
     padding: 20px;
-    box-shadow: 0px 0px 30px 0px transparent;
+    box-shadow: 0px 0px 25px 0px transparent;
     display: block;
     @include transition(.4);
     @media (max-width: $breakpoint-md) {
@@ -17,7 +17,7 @@
     }
 
     &:hover {
-      box-shadow: 0px 0px 30px 0px rgba(51, 116, 238, 0.2);
+      box-shadow: 0px 0px 25px 0px rgba(51, 116, 238, 0.2);
 
       & .article__title {
         color: $accent-color;
@@ -82,6 +82,13 @@
 
   }
 
+  &__top {
+    margin-bottom: 62px;
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 30px;
+    }
+  }
+
   & .btn-primary {
     @media (max-width: $breakpoint-md) {
       margin-top: 30px;
@@ -111,11 +118,41 @@
       &-2 {
         bottom: 97px;
         left: 54px;
+        @media (max-width: $breakpoint-md) {
+          width: 126px;
+          height: 82px;
+          left: auto;
+          right: 5px;
+          bottom: 42px;
+
+        }
+        @media (max-width: $breakpoint-sm) {
+          width: 106px;
+          height: 62px;
+        }
       }
 
       &-1 {
         top: 66.2px;
         right: 32.9px;
+        @media (max-width: $breakpoint-md) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  & .swiper {
+    &-entry {
+      @media (max-width: $breakpoint-xl) {
+        width: calc(100% + 60px);
+        margin-left: -30px;
+      }
+    }
+
+    &-container {
+      @media (max-width: $breakpoint-xl) {
+        padding: 0 30px;
       }
     }
   }
@@ -222,9 +259,9 @@
 }
 
 .s-article {
-  margin-bottom: 44px;
+  padding-bottom: 44px;
   @media (max-width: $breakpoint-md) {
-    margin-bottom: 66px;
+    padding-bottom: 66px;
   }
 
   & .decor {
@@ -232,25 +269,48 @@
       top: 50%;
       right: 60px;
       transform: translateY(-50%);
+      @media (max-width: $breakpoint-md) {
+
+        top: 4%;
+        left: 10px;
+        right: auto;
+        transform: none;
+        width: 150px;
+        height: 160px;
+      }
     }
 
     &-2 {
       bottom: 97px;
       left: 54px;
+      @media (max-width: $breakpoint-md) {
+        left: auto;
+        right: 15px;
+        bottom: 30px;
+        width: 117px;
+        height: 76px;
+      }
     }
   }
 
   & .heading {
     margin-bottom: 33px;
-    font-size: 50px;
+
+    @include fontSize(35, 50);
+    @media (max-width: $breakpoint-md) {
+      margin-bottom: 18px;
+    }
 
     &__sub {
       color: $accent-color;
-      font-size: 25px;
+      @include fontSize(20, 25);
       line-height: 1.4;
       letter-spacing: 0.05em;
-
       margin-bottom: 14px;
+      @media (max-width: $breakpoint-md) {
+        margin-bottom: 6px;
+      }
+
     }
   }
 
