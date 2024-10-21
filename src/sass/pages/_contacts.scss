@@ -70,8 +70,8 @@
     }
 
     & .img {
-      width: 50%;
-      height: 50%;
+      width: 40%;
+      height: 40%;
       object-fit: contain;
       object-position: center;
 
@@ -79,6 +79,14 @@
         margin-right: 21px;
         width: 63px;
         height: 54px;
+
+        background: url("../img/hexagon.svg") center no-repeat;
+
+        @media (max-width: $breakpoint-md) {
+          width: 58px;
+          height: 50px;
+          margin-right: 12px;
+        }
       }
     }
 
