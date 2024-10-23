@@ -12,7 +12,7 @@
   opacity: 1;
 
   @include transition(.5);
-  padding: 12px 0 52px 0;
+  padding: 15px 0;
   @media (max-width: $breakpoint-md) {
     padding: 13px 0;
   }
@@ -78,7 +78,7 @@
 
       a {
         color: $whiteColor;
-        @include fontSize(14, 17);
+        font-size: 17px;
         @include transition(.5);
 
         &:hover {
@@ -125,7 +125,7 @@
             width: 100%;
 
             &:nth-child(1) {
-              transform: translateY(10px) rotate(45deg);
+              transform: translateY(9.5px) rotate(45deg);
             }
 
             &:nth-child(2) {
@@ -133,7 +133,7 @@
             }
 
             &:nth-child(3) {
-              transform: translateY(-10px) rotate(-45deg);
+              transform: translateY(-9.5px) rotate(-45deg);
             }
           }
         }
@@ -165,20 +165,24 @@
   & .navbar {
     position: fixed;
     z-index: -1;
-    top: 115px;
+    top: 75px;
     left: 0;
     width: 100%;
     height: auto;
     @include transition(.5);
     background-color: #030061;
-    padding-block: 1.25rem;
+    padding-block: 5rem;
     opacity: 0;
     visibility: hidden;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
     @media (max-width: $breakpoint-md) {
       top: 71px;
-    height:calc(100% - 71px);
+      height: calc(100% - 71px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-block: 0;
     }
 
     &.is-visible {
@@ -203,7 +207,7 @@
       }
 
       &-item {
-        margin: 0 20px;
+        margin: 0 2.5%;
         @media (max-width: $breakpoint-lg) {
           padding: 0;
           display: block;
@@ -220,7 +224,7 @@
         & a {
           font-weight: 500;
 
-          @include fontSize(22,25);
+          @include fontSize(22, 25);
           line-height: 1.2;
           color: #fff;
           @include transition(.5);

@@ -175,6 +175,15 @@
         right: 0;
         z-index: 2;
       }
+
+      &-3 {
+        width: 113px;
+        height: 121px;
+        bottom: -55px;
+        right: -15px;
+        z-index: 1;
+        opacity: 0.4;
+      }
     }
   }
 }

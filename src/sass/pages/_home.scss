@@ -84,7 +84,7 @@
   &__img {
     height: 100%;
 
-    width: 50%;
+    width: calc(50% - 25px);
     position: absolute;
     top: 0;
     right: 0;
@@ -121,9 +121,9 @@
     }
 
     & .decor {
-      bottom: 20px;
-      right: 25px;
-      width: 100%;
+      bottom: 103px;
+      left: 50px;
+      max-width: 90%;
       z-index: 2;
     }
   }
