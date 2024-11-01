@@ -289,3 +289,22 @@ $('body').on('change', '.upload-file', function () {
         $('.upload-file__name').text(fileName);
     }
 });
+
+// =============================
+// TAB
+// =============================
+$('.tab-title').on('click', function () {
+    $(this).parent().toggleClass('active');
+});
+
+$('.tab-toggle:not(.type2) .tab-item').on('click', function () {
+
+    var tab = $(this).closest('.tabs').find('.tab');
+    var i = $(this).index();
+    $(this).addClass('active').siblings().removeClass('active');
+    tab.eq(i).siblings('.tab:visible').fadeOut(function () {
+        tab.eq(i).fadeIn();
+        tab.eq(i).addClass('active');
+    });
+    $(this).closest('.tab-nav').removeClass('active').find('.tab-title').text($(this).text());
+});

@@ -20,17 +20,7 @@
   -webkit-mask-repeat: no-repeat;
 }
 
-/*.decor {
-  position: absolute;
 
-  &-1 {
-    top: -65px;
-    right: 0;
-  }
-
-  &-2 {
-  }
-}*/
 
 .s-hero {
   background: #030061;
@@ -156,12 +146,19 @@
     flex: 1;
     font-size: 30px;
     color: #000;
-    white-space: nowrap;
+   // white-space: nowrap;
     cursor: pointer;
     @include transition(.5);
+    padding-right: 20px;
 
     & i {
       font-size: 18px;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
     }
 
     &:after {

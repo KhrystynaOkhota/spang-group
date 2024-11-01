@@ -10,7 +10,7 @@
     <title>Spang group</title>
     <meta name="description" content=""/>
     <link rel="shortcut icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="assets/css/app.css"/>
 
 </head>
@@ -1611,27 +1611,5 @@
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script src="assets/js/js_app.min.js"></script>
 
-
-<script>
-    // =============================
-    // TABS
-    // =============================
-    $('.tab-title').on('click', function () {
-        $(this).parent().toggleClass('active');
-    });
-    $('.tab-toggle:not(.type2) .tab-item').on('click', function () {
-
-        var tab = $(this).closest('.tabs').find('.tab');
-        var i = $(this).index();
-        $(this).addClass('active').siblings().removeClass('active');
-        tab.eq(i).siblings('.tab:visible').fadeOut(function () {
-            tab.eq(i).fadeIn();
-            tab.eq(i).addClass('active');
-        });
-        $(this).closest('.tab-nav').removeClass('active').find('.tab-title').text($(this).text());
-    });
-
-
-</script>
 </body>
 </html>
